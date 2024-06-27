@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Forms</title>
+    <!-- Bootstrap CSS -->
+    <script src="js/bootstrap.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2>Multi-Column Form Layout</h2>
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="firstName">First Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="firstName"
+              placeholder="First Name"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="lastName">Last Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="lastName"
+              placeholder="Last Name"
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Email"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="phone">Phone</label>
+            <input
+              type="text"
+              class="form-control"
+              id="phone"
+              placeholder="Phone"
+            />
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <div class="container mt-5">
+      <h2>Inline Contact Form</h2>
+      <form class="form-inline">
+        <div class="form-group mb-2">
+          <label for="inlineName" class="sr-only">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inlineName"
+            placeholder="Name"
+          />
+        </div>
+        <div class="form-group mb-2">
+          <label for="inlineEmail" class="sr-only">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="inlineEmail"
+            placeholder="Email"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+      </form>
+    </div>
+
+    <div class="container mt-5">
+      <h2>Stacked Form Layout</h2>
+      <form>
+        <div class="form-group">
+          <label for="stackedName">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="stackedName"
+            placeholder="Name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="stackedEmail">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="stackedEmail"
+            placeholder="Email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="stackedMessage">Message</label>
+          <textarea
+            class="form-control"
+            id="stackedMessage"
+            rows="4"
+            placeholder="Your Message"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <div class="container mt-5">
+      <h2>Styled Form with Validation</h2>
+      <form class="needs-validation" novalidate>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            required
+          />
+          <small id="emailHelp" class="form-text text-muted"
+            >We'll never share your email with anyone else.</small
+          >
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Please provide a valid email.</div>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            required
+          />
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Please provide a valid password.</div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
